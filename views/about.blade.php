@@ -19,19 +19,23 @@
         <div class="mx-5 my-3">
             <p>
                 <strong>
-                    KayaBoys is a sandwich to-go business that offers a unique taste with a variety of sweet and savory
+                    KayaBoys is a sandwich business that offers a unique taste with a variety of sweet and savory
                     options. With a grab-and-go concept, KayaBoys provides convenience for customers who want a
-                    practical snack or breakfast without sacrificing quality and flavor. Each sandwich is made with soft
+                    practical snack or breakfast without sacrificing quality and flavor. Each sandwiches are made with
+                    soft
                     and crispy toasted bread, delivering a rich taste sensation in every bite.
                 </strong>
             </p>
             <p>
                 <strong>
-                    KayaBoys is also offered at an affordable price, starting from just Rp 14,000 to Rp 19,000, making
-                    it suitable for all groups, from students to office workers. With practical and hygienic packaging,
-                    KayaBoys sandwiches can be enjoyed anytime and anywhere, whether for breakfast, a light lunch, or an
+                    Our sandwiches are also sold at an affordable price, starting from just Rp 14,000 to Rp 19,000,
+                    making
+                    it suitable for all groups of people, from students to office workers. With practical and hygienic
+                    packaging,
+                    KayaBoys sandwiches can be enjoyed anytime and anywhere, whether it is for breakfast or an
                     afternoon snack. KayaBoys is committed to always delivering quality products made from selected
-                    ingredients, making it the perfect choice for toast lovers with a variety of flavors and friendly
+                    carefully
+                    ingredients, making it the perfect choice for toast lovers with a variety of flavors and affordable
                     prices.
                 </strong>
             </p>
@@ -44,7 +48,7 @@
                 <h2>MISSION</h2>
                 <p>
                     <strong>
-                        To become the leading to-go sandwich brand in Indonesia, known for its varied flavors, best
+                        To become the leading sandwich brand in Indonesia, known for its varied flavors, best
                         quality, and affordable prices.
                     </strong>
                 </p>
@@ -58,7 +62,7 @@
                         </li>
                         <li>
                             Offering 15 unique and delicious sweet flavors and 12 unique and delicious savory flavors to
-                            satisfy customer taste.
+                            satisfy our preferences of our customers.
                         </li>
                         <li>
                             Offering affordable prices without compromising quality and customer satisfaction.
@@ -67,15 +71,16 @@
                             Creating practical and hygienic packaging so customers can easily enjoy sandwiches anywhere.
                         </li>
                         <li>
-                            Terus berinovasi dalam menu dan layanan agar selalu relevan
-                            dengan tren dan kebutuhan pasar.
+                            Continuously innovating our menu and services to stay relevant
+                            to market trends and needs.
                         </li>
                         <li>
                             Building a wide distribution network so that KayaBoys can be enjoyed by more people in
                             various locations.
                         </li>
                         <li>
-                            Providing friendly, fast, and professional service to create a pleasant customer experience.
+                            Providing a friendly, fast, and professional service to create a pleasant customer
+                            experience.
                         </li>
                     </strong>
                 </ul>
@@ -90,9 +95,9 @@
             </div>
             <div class="mx-5">
                 <p>
-                    At KayaBoys, we believe that deliciousness doesn't have to be complicated, and quality doesn't have
+                    At KayaBoys, we believe that the flavors of our sandwiches does not have to be complicated, and quality does not have
                     to be expensive. With the best ingredients, innovative recipes, and practical packaging, we present
-                    sandwiches that are not only tasty but also easy to enjoy anywhere. Each flavor variant is made with
+                    sandwiches that are not only delicious but also easy to enjoy anywhere. Each flavor variant is made with
                     care so that every bite delivers satisfaction to customers.
                 </p>
                 <p>
@@ -113,7 +118,7 @@
             <div class="bg-warning-subtle my-3">
                 <h3>PRODUCT</h3>
                 <p>
-                    KayaBoys offers to-go sandwiches with 15 sweet and 12 savory flavors, made from high-quality
+                    KayaBoys offers sandwiches with 15 sweet and 12 savory flavors, made with high-quality
                     ingredients to ensure a delicious taste and a soft, crispy bread texture. Each sandwich is
                     conveniently and hygienically packaged for easy portability and consumption anytime.
                     Furthermore, KayaBoys will continue to innovate by adding new flavors to suit market trends and

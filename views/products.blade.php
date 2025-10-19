@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,9 @@
     <!-- link CSS-->
     <link rel="stylesheet" href="{{ asset('css/products.css') }}">
 </head>
+
 <body>
-    @include('layouts.kayanavigation')
+
 
     <section class="kaya-hero">
         <div class="container">
@@ -21,319 +23,53 @@
     <section class="kaya-about">
         <div class="container">
             <h2 class="kaya-section-title">Our Products</h2>
-            <p>KayaBoys adalah penyedia sandwich to-go yang menawarkan 27 variant rasa, terdiri dari 15 variant manis dan 12 variant asin. Setiap sandwich dibuat dengan roti panggang berkualitas tinggi yang lembut di dalam dan renyah di luar, diisi dengan berbagai pilihan isian yang lezat. Produk ini dikemas secara praktis dan higienis, memudahkan pelanggan untuk menikmatinya di mana saja dan kapan saja.</p>
+            <p>KayaBoys is a to-go sandwich provider offering 27 flavor variants, consisting 
+                of 15 sweet variants and 12 savory ones. Each sandwich is made with high-quality 
+                toasted bread that is soft on the inside and crispy on the outside, filled with 
+                a variety of delicious fillings. The product is packaged conveniently and 
+                hygienically, making it easy for customers to enjoy anywhere and anytime.</p>
         </div>
     </section>
     <!-- list produk -->
     <section class="kaya-products">
         <div class="container">
-            <h2 class="kaya-section-title">Varian Rasa</h2>
-            
-            <!--Sweet-->
+            <h2 class="kaya-section-title">Flavor Variety</h2>
+
+            <!-- Sweet-->
             <div class="mb-5">
                 <h3 class="kaya-category-title sweet-category">Sweet Variants</h3>
                 <div class="kaya-scroll-container">
-                    <!--1-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
+                    @foreach ($sweetProducts as $product)
+                        <div class="card kaya-product-card">
+                            <div class="kaya-product-image"
+                                style="background-image: url('{{ $product->image_path }}');">
+                            </div>
+                            <div class="kaya-product-body">
+                                <h5 class="kaya-product-name">{{ $product->name }}</h5>
+                                <p class="kaya-product-desc">{{ $product->description }}</p>
+                                <span class="kaya-price">Rp {{ number_format($product->price, 0, ',', '.') }}</span>
+                            </div>
                         </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Butter Kaya Toast</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 14k</span>
-                        </div>
-                    </div>
-                    <!--2-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Pandan Kaya Toast</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 14k</span>
-                        </div>
-                    </div>
-                    
-                    <!--3-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Blueberry Cheesecake</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
-
-                    <!--4-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Strawberry Cheesecake</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
-
-                    <!--5-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Choco n Cheese</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
-
-                    <!--6-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Ovomaltine</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
-
-                    <!--7-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Ultimate Cheese</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
-
-                    <!--8-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Red Velvet</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
-
-                    <!--9-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Matcha Latte</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
-
-                    <!--10-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Tiramisu</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
-
-                    <!--11-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Milky Butter</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
-
-                    <!--12-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Milky Taro</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
-
-                    <!--13-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Musang King</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
-
-                    <!--14-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Peanut Butter</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
-
-                    <!--15-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Orange Marmalade</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
-            
-            <!--Savory-->
+
+            <!-- Savory-->
             <div class="mb-5">
                 <h3 class="kaya-category-title savory-category">Savory Variants</h3>
                 <div class="kaya-scroll-container">
-                    <!--1-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
+                    @foreach ($savoryProducts as $product)
+                        <div class="card kaya-product-card">
+                            <div class="kaya-product-image"
+                                style="background-image: url('{{ $product->image_path }}');">
+                            </div>
+                            <div class="kaya-product-body">
+                                <h5 class="kaya-product-name">{{ $product->name }}</h5>
+                                <p class="kaya-product-desc">{{ $product->description }}</p>
+                                <span class="kaya-price">Rp {{ number_format($product->price, 0, ',', '.') }}</span>
+                            </div>
                         </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Tamago Sando</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 14k</span>
-                        </div>
-                    </div>
-                    
-                    <!--2-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Spicy Egg Mayo</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 14k</span>
-                        </div>
-                    </div>
-                    
-                    <!--3-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Kani Mayo</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 14k</span>
-                        </div>
-                    </div>
-
-                    <!--4-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">RoTeJu</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 14k</span>
-                        </div>
-                    </div>
-
-                    <!--5-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Singaporean</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 14k</span>
-                        </div>
-                    </div>
-
-                    <!--6-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Egg Meets Mustard</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 14k</span>
-                        </div>
-                    </div>
-
-                    <!--7-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">American Breakfast</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 14k</span>
-                        </div>
-                    </div>
-
-                    <!--8-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">BigBoy</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
-
-                    <!--9-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">BigBoss</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
-
-                    <!--10-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">Chikatsudo</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
-
-                    <!--11-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">The Crown</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 15k</span>
-                        </div>
-                    </div>
-
-                    <!--12-->
-                    <div class="card kaya-product-card">
-                        <div class="kaya-product-image" style="background-image: url('/images/SandwichPanel.png');">
-                        </div>
-                        <div class="kaya-product-body">
-                            <h5 class="kaya-product-name">TunaMago Sando</h5>
-                            <p class="kaya-product-desc">Sandwich Description</p>
-                            <span class="kaya-price">Rp 14k</span>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -346,14 +82,16 @@
             <div class="row">
                 <div class="col-md-6 col-lg-3">
                     <div class="kaya-advantage-item">
-                        <h5>Quakity Ingredietns</h5>
-                        <p>Using bread and fillings with the best selected ingredients to ensure satisfying taste and texture.</p>
+                        <h5>Quality Ingredients</h5>
+                        <p>Using bread and fillings with the best selected ingredients to ensure satisfying taste and
+                            texture.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="kaya-advantage-item">
                         <h5>Varying Tastes</h5>
-                        <p>The wide selection of flavors allows customers to try various combinations to suit their tastes.</p>
+                        <p>The wide selection of flavors allows customers to try various combinations to suit their
+                            tastes.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
@@ -372,8 +110,9 @@
         </div>
     </section>
 
-    @include('layouts.kayacontact')
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
