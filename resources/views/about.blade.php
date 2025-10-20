@@ -7,56 +7,57 @@
     <title>Kaya Boys | About</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/about.css') }}">
 </head>
 
 <body class="bg-warning">
     @include('layouts.kayanavigation')
     <div class="container text-center mt-5">
-        <h1 class="text-light">ABOUT</h1>
         <img src="{{asset('images/logoSmall.png')}}">
     </div>
     <div class="container-max-width mt-3 bg-body">
         <div class="mx-5 my-3">
+            <h2 class="kaya-section-title">About Us</h2>
             <p>
-                <strong>
-                    KayaBoys is a sandwich business that offers a unique taste with a variety of sweet and savory
-                    options. With a grab-and-go concept, KayaBoys provides convenience for customers who want a
-                    practical snack or breakfast without sacrificing quality and flavor. Each sandwiches are made with
-                    soft
-                    and crispy toasted bread, delivering a rich taste sensation in every bite.
-                </strong>
+
+                KayaBoys is a sandwich business that offers a unique taste with a variety of sweet and savory
+                options. With a grab-and-go concept, KayaBoys provides convenience for customers who want a
+                practical snack or breakfast without sacrificing quality and flavor. Each sandwiches are made with
+                soft
+                and crispy toasted bread, delivering a rich taste sensation in every bite.
+
             </p>
-            <p>
-                <strong>
-                    Our sandwiches are also sold at an affordable price, starting from just Rp 14,000 to Rp 19,000,
-                    making
-                    it suitable for all groups of people, from students to office workers. With practical and hygienic
-                    packaging,
-                    KayaBoys sandwiches can be enjoyed anytime and anywhere, whether it is for breakfast or an
-                    afternoon snack. KayaBoys is committed to always delivering quality products made from selected
-                    carefully
-                    ingredients, making it the perfect choice for toast lovers with a variety of flavors and affordable
-                    prices.
-                </strong>
+            <p class="mb-5">
+
+                Our sandwiches are also sold at an affordable price, starting from just Rp 14,000 to Rp 19,000,
+                making
+                it suitable for all groups of people, from students to office workers. With practical and hygienic
+                packaging,
+                KayaBoys sandwiches can be enjoyed anytime and anywhere, whether it is for breakfast or an
+                afternoon snack. KayaBoys is committed to always delivering quality products made from selected
+                carefully
+                ingredients, making it the perfect choice for toast lovers with a variety of flavors and affordable
+                prices.
+
             </p>
         </div>
     </div>
     <div class="container-max-width mt-5">
         <h1 class="text-light text-center m-3"><strong>MISSION & VISION</strong></h1>
         <div>
-            <div class="container-max-width text-light mx-5">
-                <h2>MISSION</h2>
+            <div class="container-max-width mx-5">
+                <h2 class="text-light">MISSION</h2>
                 <p>
-                    <strong>
+                    
                         To become the leading sandwich brand in Indonesia, known for its varied flavors, best
                         quality, and affordable prices.
-                    </strong>
+                    
                 </p>
             </div>
-            <div class="container-max-width text-light mx-5">
-                <h2>VISION</h2>
+            <div class="container-max-width mx-5">
+                <h2 class="text-light">VISION</h2>
                 <ul>
-                    <strong>
+                    
                         <li>
                             To provide quality sandwiches made with fresh ingredients and the best selections.
                         </li>
@@ -82,7 +83,7 @@
                             Providing a friendly, fast, and professional service to create a pleasant customer
                             experience.
                         </li>
-                    </strong>
+                    
                 </ul>
             </div>
         </div>
@@ -90,14 +91,16 @@
     <div class="container-max-width bg-body">
         <div class="mt-5">
             <div class="text-center">
-                <h1 class="text-warning">OUR PHILOSOPHY</h1>
+                <h2 class="kaya-section-title">Our Philosophy</h2>
                 <h5>"Simplicity in Every Bite, Quality in Every Sandwich"</h5>
             </div>
             <div class="mx-5">
                 <p>
-                    At KayaBoys, we believe that the flavors of our sandwiches does not have to be complicated, and quality does not have
+                    At KayaBoys, we believe that the flavors of our sandwiches does not have to be complicated, and
+                    quality does not have
                     to be expensive. With the best ingredients, innovative recipes, and practical packaging, we present
-                    sandwiches that are not only delicious but also easy to enjoy anywhere. Each flavor variant is made with
+                    sandwiches that are not only delicious but also easy to enjoy anywhere. Each flavor variant is made
+                    with
                     care so that every bite delivers satisfaction to customers.
                 </p>
                 <p>
@@ -108,15 +111,14 @@
                 </p>
             </div>
         </div>
-        <hr class="text-warning" />
         <div class="mt-5">
-            <h1 class="text-warning"><strong>MARKETING PLAN</strong></h1>
-            <p>
+            <h2 class="kaya-section-title">Marketing Plan</h2>
+            <p class="mb-5">
                 With the following marketing strategy, KayaBoys hopes to reach more customers, increase loyalty, and
                 continue to grow as a favorite to-go sandwich brand in Indonesia.
             </p>
-            <div class="bg-warning-subtle my-3">
-                <h3>PRODUCT</h3>
+            <div class="mb-5">
+                <h3 class="marketing-section">PRODUCT</h3>
                 <p>
                     KayaBoys offers sandwiches with 15 sweet and 12 savory flavors, made with high-quality
                     ingredients to ensure a delicious taste and a soft, crispy bread texture. Each sandwich is
@@ -125,8 +127,8 @@
                     tastes.
                 </p>
             </div>
-            <div class="bg-warning-subtle my-3">
-                <h3>PRICE</h3>
+            <div class="mb-5">
+                <h3 class="marketing-section">PRICE</h3>
                 <p>
                     KayaBoys promotes an affordable price concept, ranging from Rp 14,000 to Rp 19,000 per sandwich.
                     This pricing strategy is designed to reach various market segments, from students to office workers.
@@ -134,8 +136,8 @@
                     such as a value breakfast package or discounts on purchases over certain quantities.
                 </p>
             </div>
-            <div class="bg-warning-subtle my-3">
-                <h3>PROMOTION</h3>
+            <div class="mb-5">
+                <h3 class="marketing-section">PROMOTION</h3>
                 <p>
                     KayaBoys will utilize digital marketing strategies through social media platforms such as Instagram,
                     TikTok, and other marketplaces to increase brand awareness. Content in the form of engaging photos,
@@ -145,8 +147,8 @@
                     discounts for students and office workers.
                 </p>
             </div>
-            <div class="bg-warning-subtle my-3">
-                <h3>PLACE</h3>
+            <div class="mb-5">
+                <h3 class="marketing-section">PLACE</h3>
                 <p>
                     KayaBoys will sell its products through several channels, including physical outlets in strategic
                     locations such as near campuses, offices, and shopping centers.
