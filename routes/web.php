@@ -13,8 +13,8 @@ Route::get('/project', function () {
     return view('project');
 });
 
-Route::get('/contact', function () {
-    return view('contact');
+Route::get('/about', function () {
+    return view('about');
 });
 
 Route::get('/welcome', function () {
