@@ -10,80 +10,81 @@
     <link rel="stylesheet" href="{{ asset('css/about.css') }}">
 </head>
 
-<body class="bg-warning">
+<body>
     @include('layouts.kayanavigation')
-    <div class="container text-center mt-5">
+    <container class="kaya-bg">
         <img src="{{asset('images/logoSmall.png')}}">
-    </div>
-    <div class="container-max-width mt-3 bg-body">
-        <div class="mx-5 my-3">
-            <h2 class="kaya-section-title">About Us</h2>
-            <p>
+    <section class="kaya-about">
+        <div>
+            <div>
+                <h2 class="kaya-section-title">About Us</h2>
+                <p>
 
-                KayaBoys is a sandwich business that offers a unique taste with a variety of sweet and savory
-                options. With a grab-and-go concept, KayaBoys provides convenience for customers who want a
-                practical snack or breakfast without sacrificing quality and flavor. Each sandwiches are made with
-                soft
-                and crispy toasted bread, delivering a rich taste sensation in every bite.
+                    KayaBoys is a sandwich business that offers a unique taste with a variety of sweet and savory
+                    options. With a grab-and-go concept, KayaBoys provides convenience for customers who want a
+                    practical snack or breakfast without sacrificing quality and flavor. Each sandwiches are made with
+                    soft
+                    and crispy toasted bread, delivering a rich taste sensation in every bite.
 
-            </p>
-            <p class="mb-5">
+                </p>
+                <p>
 
-                Our sandwiches are also sold at an affordable price, starting from just Rp 14,000 to Rp 19,000,
-                making
-                it suitable for all groups of people, from students to office workers. With practical and hygienic
-                packaging,
-                KayaBoys sandwiches can be enjoyed anytime and anywhere, whether it is for breakfast or an
-                afternoon snack. KayaBoys is committed to always delivering quality products made from selected
-                carefully
-                ingredients, making it the perfect choice for toast lovers with a variety of flavors and affordable
-                prices.
+                    Our sandwiches are also sold at an affordable price, starting from just Rp 14,000 to Rp 19,000,
+                    making
+                    it suitable for all groups of people, from students to office workers. With practical and hygienic
+                    packaging,
+                    KayaBoys sandwiches can be enjoyed anytime and anywhere, whether it is for breakfast or an
+                    afternoon snack. KayaBoys is committed to always delivering quality products made from selected
+                    carefully
+                    ingredients, making it the perfect choice for toast lovers with a variety of flavors and affordable
+                    prices.
 
-            </p>
+                </p>
+            </div>
         </div>
-    </div>
+    </section>
     <div class="container-max-width mt-5">
         <h1 class="text-light text-center m-3"><strong>MISSION & VISION</strong></h1>
         <div>
             <div class="container-max-width mx-5">
                 <h2 class="text-light">MISSION</h2>
                 <p>
-                    
-                        To become the leading sandwich brand in Indonesia, known for its varied flavors, best
-                        quality, and affordable prices.
-                    
+
+                    To become the leading sandwich brand in Indonesia, known for its varied flavors, best
+                    quality, and affordable prices.
+
                 </p>
             </div>
             <div class="container-max-width mx-5">
                 <h2 class="text-light">VISION</h2>
                 <ul>
-                    
-                        <li>
-                            To provide quality sandwiches made with fresh ingredients and the best selections.
-                        </li>
-                        <li>
-                            Offering 15 unique and delicious sweet flavors and 12 unique and delicious savory flavors to
-                            satisfy our preferences of our customers.
-                        </li>
-                        <li>
-                            Offering affordable prices without compromising quality and customer satisfaction.
-                        </li>
-                        <li>
-                            Creating practical and hygienic packaging so customers can easily enjoy sandwiches anywhere.
-                        </li>
-                        <li>
-                            Continuously innovating our menu and services to stay relevant
-                            to market trends and needs.
-                        </li>
-                        <li>
-                            Building a wide distribution network so that KayaBoys can be enjoyed by more people in
-                            various locations.
-                        </li>
-                        <li>
-                            Providing a friendly, fast, and professional service to create a pleasant customer
-                            experience.
-                        </li>
-                    
+
+                    <li>
+                        To provide quality sandwiches made with fresh ingredients and the best selections.
+                    </li>
+                    <li>
+                        Offering 15 unique and delicious sweet flavors and 12 unique and delicious savory flavors to
+                        satisfy our preferences of our customers.
+                    </li>
+                    <li>
+                        Offering affordable prices without compromising quality and customer satisfaction.
+                    </li>
+                    <li>
+                        Creating practical and hygienic packaging so customers can easily enjoy sandwiches anywhere.
+                    </li>
+                    <li>
+                        Continuously innovating our menu and services to stay relevant
+                        to market trends and needs.
+                    </li>
+                    <li>
+                        Building a wide distribution network so that KayaBoys can be enjoyed by more people in
+                        various locations.
+                    </li>
+                    <li>
+                        Providing a friendly, fast, and professional service to create a pleasant customer
+                        experience.
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -160,6 +161,7 @@
             </div>
         </div>
     </div>
+    </container>
     @include('layouts.kayacontact')
 </body>
 

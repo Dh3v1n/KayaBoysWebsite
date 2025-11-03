@@ -5,12 +5,16 @@
     --kaya-light: #f8f9fa;
 }
 
+.kaya-bg {
+    color: var(--kaya-yellow);
+}
+
 .kaya-section-title {
     position: relative;
     margin-bottom: 3rem;
     padding-bottom: 1rem;
     text-align: center;
-    color: var(--kaya-dark);
+    color: var(--kaya-yellow);
     font-weight: 700;
     font-size: 2.2rem;
 }
@@ -28,7 +32,7 @@
 }
 
 .kaya-about {
-    background: var(--kaya-light);
+    background: var(--kaya-yellow);
     padding: 60px 0;
 }
 
